@@ -1,0 +1,25 @@
+2025-04-13 18:33:39,319 INFO    ThreadPoolExecutor-0_2:15816 [wandb_setup.py:_flush():67] Current SDK version is 0.19.9
+2025-04-13 18:33:39,319 INFO    ThreadPoolExecutor-0_2:15816 [wandb_setup.py:_flush():67] Configure stats pid to 15816
+2025-04-13 18:33:39,319 INFO    ThreadPoolExecutor-0_2:15816 [wandb_setup.py:_flush():67] Loading settings from C:\Users\hp\.config\wandb\settings
+2025-04-13 18:33:39,319 INFO    ThreadPoolExecutor-0_2:15816 [wandb_setup.py:_flush():67] Loading settings from D:\University\Semester 6\Machine learning\assignment 3\wandb\settings
+2025-04-13 18:33:39,319 INFO    ThreadPoolExecutor-0_2:15816 [wandb_setup.py:_flush():67] Loading settings from environment variables
+2025-04-13 18:33:39,319 INFO    ThreadPoolExecutor-0_2:15816 [wandb_init.py:setup_run_log_directory():662] Logging user logs to D:\University\Semester 6\Machine learning\assignment 3\wandb\run-20250413_183339-2c5d718l\logs\debug.log
+2025-04-13 18:33:39,320 INFO    ThreadPoolExecutor-0_2:15816 [wandb_init.py:setup_run_log_directory():663] Logging internal logs to D:\University\Semester 6\Machine learning\assignment 3\wandb\run-20250413_183339-2c5d718l\logs\debug-internal.log
+2025-04-13 18:33:39,320 INFO    ThreadPoolExecutor-0_2:15816 [wandb_init.py:init():781] calling init triggers
+2025-04-13 18:33:39,320 INFO    ThreadPoolExecutor-0_2:15816 [wandb_init.py:init():786] wandb.init called with sweep_config: {}
+config: {'learning_rate': 'invscaling', 'eta0': 0.01, 'max_iter': 20, 'tol': None, 'batch_size': 64, '_wandb': {}}
+2025-04-13 18:33:39,320 INFO    ThreadPoolExecutor-0_2:15816 [wandb_init.py:init():809] starting backend
+2025-04-13 18:33:39,320 INFO    ThreadPoolExecutor-0_2:15816 [wandb_init.py:init():813] sending inform_init request
+2025-04-13 18:33:39,323 INFO    ThreadPoolExecutor-0_2:15816 [backend.py:_multiprocessing_setup():101] multiprocessing start_methods=spawn, using: spawn
+2025-04-13 18:33:39,323 INFO    ThreadPoolExecutor-0_2:15816 [wandb_init.py:init():823] backend started and connected
+2025-04-13 18:33:39,324 INFO    ThreadPoolExecutor-0_2:15816 [wandb_init.py:init():915] updated telemetry
+2025-04-13 18:33:39,328 INFO    ThreadPoolExecutor-0_2:15816 [wandb_init.py:init():939] communicating run to backend with 90.0 second timeout
+2025-04-13 18:33:41,178 INFO    ThreadPoolExecutor-0_2:15816 [wandb_init.py:init():1014] starting run threads in backend
+2025-04-13 18:33:44,075 INFO    ThreadPoolExecutor-0_2:15816 [wandb_run.py:_console_start():2454] atexit reg
+2025-04-13 18:33:44,076 INFO    ThreadPoolExecutor-0_2:15816 [wandb_run.py:_redirect():2306] redirect: wrap_raw
+2025-04-13 18:33:44,076 INFO    ThreadPoolExecutor-0_2:15816 [wandb_run.py:_redirect():2371] Wrapping output streams.
+2025-04-13 18:33:44,076 INFO    ThreadPoolExecutor-0_2:15816 [wandb_run.py:_redirect():2394] Redirects installed.
+2025-04-13 18:33:44,101 INFO    ThreadPoolExecutor-0_2:15816 [wandb_init.py:init():1056] run started, returning control to user process
+2025-04-13 18:34:08,158 INFO    MsgRouterThr:15816 [mailbox.py:close():129] [no run ID] Closing mailbox, abandoning 1 handles.
+2025-04-13 18:34:10,352 INFO    MsgRouterThr:15816 [mailbox.py:close():129] [no run ID] Closing mailbox, abandoning 1 handles.
+2025-04-13 18:34:11,954 INFO    MsgRouterThr:15816 [mailbox.py:close():129] [no run ID] Closing mailbox, abandoning 1 handles.

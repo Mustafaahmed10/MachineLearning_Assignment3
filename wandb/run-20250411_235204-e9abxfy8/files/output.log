@@ -1,0 +1,20 @@
+D:\University\Semester 6\Machine learning\assignment 3\.venv\Lib\site-packages\sklearn\linear_model\_stochastic_gradient.py:1608: ConvergenceWarning: Maximum number of iteration reached before convergence. Consider increasing max_iter to improve the fit.
+  warnings.warn(
+Epoch 1, Val Loss: 0.6062
+D:\University\Semester 6\Machine learning\assignment 3\.venv\Lib\site-packages\sklearn\linear_model\_stochastic_gradient.py:1608: ConvergenceWarning: Maximum number of iteration reached before convergence. Consider increasing max_iter to improve the fit.
+  warnings.warn(
+Epoch 2, Val Loss: 1.8146
+D:\University\Semester 6\Machine learning\assignment 3\.venv\Lib\site-packages\sklearn\linear_model\_stochastic_gradient.py:1608: ConvergenceWarning: Maximum number of iteration reached before convergence. Consider increasing max_iter to improve the fit.
+  warnings.warn(
+Epoch 3, Val Loss: 131.6980
+D:\University\Semester 6\Machine learning\assignment 3\.venv\Lib\site-packages\sklearn\linear_model\_stochastic_gradient.py:1608: ConvergenceWarning: Maximum number of iteration reached before convergence. Consider increasing max_iter to improve the fit.
+  warnings.warn(
+Epoch 4, Val Loss: 17387.6588
+D:\University\Semester 6\Machine learning\assignment 3\.venv\Lib\site-packages\sklearn\linear_model\_stochastic_gradient.py:1608: ConvergenceWarning: Maximum number of iteration reached before convergence. Consider increasing max_iter to improve the fit.
+  warnings.warn(
+Epoch 5, Val Loss: 1360012.5804
+D:\University\Semester 6\Machine learning\assignment 3\.venv\Lib\site-packages\sklearn\linear_model\_stochastic_gradient.py:1608: ConvergenceWarning: Maximum number of iteration reached before convergence. Consider increasing max_iter to improve the fit.
+  warnings.warn(
+Epoch 6, Val Loss: 121433738.7913
+Early stopping triggered.
+Training completed and best model saved as 'best_model.pkl'.

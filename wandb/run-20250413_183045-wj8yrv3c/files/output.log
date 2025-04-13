@@ -1,0 +1,23 @@
+Training Batch Gradient Descent with full batch gradient descent.
+Traceback (most recent call last):
+  File "d:\University\Semester 6\Machine learning\assignment 3\python train_model.py", line 87, in <module>
+    train_model(X_scaled, y, model_config["params"].copy(), filename, model_config["label"])
+  File "d:\University\Semester 6\Machine learning\assignment 3\python train_model.py", line 81, in train_model
+    wandb.save(save_as)
+  File "D:\University\Semester 6\Machine learning\assignment 3\.venv\Lib\site-packages\wandb\sdk\wandb_run.py", line 387, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\University\Semester 6\Machine learning\assignment 3\.venv\Lib\site-packages\wandb\sdk\wandb_run.py", line 435, in wrapper_fn
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\University\Semester 6\Machine learning\assignment 3\.venv\Lib\site-packages\wandb\sdk\wandb_run.py", line 425, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\University\Semester 6\Machine learning\assignment 3\.venv\Lib\site-packages\wandb\sdk\wandb_run.py", line 2049, in save
+    return self._save(
+           ^^^^^^^^^^^
+  File "D:\University\Semester 6\Machine learning\assignment 3\.venv\Lib\site-packages\wandb\sdk\wandb_run.py", line 2108, in _save
+    target_path.symlink_to(source_path)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\pathlib.py", line 1198, in symlink_to
+    os.symlink(target, self, target_is_directory)
+OSError: [WinError 1314] A required privilege is not held by the client: 'D:\\University\\Semester 6\\Machine learning\\assignment 3\\bgd_model.pkl' -> 'D:\\University\\Semester 6\\Machine learning\\assignment 3\\wandb\\run-20250413_183045-wj8yrv3c\\files\\bgd_model.pkl'

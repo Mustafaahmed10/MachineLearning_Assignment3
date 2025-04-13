@@ -1,0 +1,38 @@
+{
+  "os": "Windows-10-10.0.26100-SP0",
+  "python": "CPython 3.11.9",
+  "startedAt": "2025-04-13T13:30:45.971395Z",
+  "program": "d:\\University\\Semester 6\\Machine learning\\assignment 3\\python train_model.py",
+  "codePath": "python train_model.py",
+  "email": "i222301@nu.edu.pk",
+  "root": "D:\\University\\Semester 6\\Machine learning\\assignment 3",
+  "host": "DESKTOP-7MT4T57",
+  "executable": "D:\\University\\Semester 6\\Machine learning\\assignment 3\\.venv\\Scripts\\python.exe",
+  "codePathLocal": "python train_model.py",
+  "cpu_count": 6,
+  "cpu_count_logical": 12,
+  "gpu": "Quadro P1000",
+  "gpu_count": 1,
+  "disk": {
+    "/": {
+      "total": "272628707328",
+      "used": "148507672576"
+    }
+  },
+  "memory": {
+    "total": "34156412928"
+  },
+  "cpu": {
+    "count": 6,
+    "countLogical": 12
+  },
+  "gpu_nvidia": [
+    {
+      "name": "Quadro P1000",
+      "memoryTotal": "4294967296",
+      "cudaCores": 512,
+      "architecture": "Pascal"
+    }
+  ],
+  "cudaVersion": "12.7"
+}

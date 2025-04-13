@@ -1,0 +1,96 @@
+Traceback (most recent call last):
+  File "d:\University\Semester 6\Machine learning\assignment 3\python train_model.py", line 95, in <module>
+    train_all_models()
+  File "d:\University\Semester 6\Machine learning\assignment 3\python train_model.py", line 92, in train_all_models
+    future.result()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\concurrent\futures\_base.py", line 456, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\University\Semester 6\Machine learning\assignment 3\python train_model.py", line 78, in train_model
+    wandb.save(save_as)
+  File "D:\University\Semester 6\Machine learning\assignment 3\.venv\Lib\site-packages\wandb\sdk\wandb_run.py", line 387, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\University\Semester 6\Machine learning\assignment 3\.venv\Lib\site-packages\wandb\sdk\wandb_run.py", line 435, in wrapper_fn
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\University\Semester 6\Machine learning\assignment 3\.venv\Lib\site-packages\wandb\sdk\wandb_run.py", line 425, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\University\Semester 6\Machine learning\assignment 3\.venv\Lib\site-packages\wandb\sdk\wandb_run.py", line 2049, in save
+    return self._save(
+           ^^^^^^^^^^^
+  File "D:\University\Semester 6\Machine learning\assignment 3\.venv\Lib\site-packages\wandb\sdk\wandb_run.py", line 2108, in _save
+    target_path.symlink_to(source_path)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\pathlib.py", line 1198, in symlink_to
+    os.symlink(target, self, target_is_directory)
+OSError: [WinError 1314] A required privilege is not held by the client: 'D:\\University\\Semester 6\\Machine learning\\assignment 3\\bgd_model.pkl' -> 'D:\\University\\Semester 6\\Machine learning\\assignment 3\\wandb\\run-20250413_183339-qxzswkyu\\files\\bgd_model.pkl'
+Traceback (most recent call last):
+  File "d:\University\Semester 6\Machine learning\assignment 3\python train_model.py", line 95, in <module>
+    train_all_models()
+  File "d:\University\Semester 6\Machine learning\assignment 3\python train_model.py", line 92, in train_all_models
+    future.result()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\concurrent\futures\_base.py", line 456, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\University\Semester 6\Machine learning\assignment 3\python train_model.py", line 78, in train_model
+    wandb.save(save_as)
+  File "D:\University\Semester 6\Machine learning\assignment 3\.venv\Lib\site-packages\wandb\sdk\wandb_run.py", line 387, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\University\Semester 6\Machine learning\assignment 3\.venv\Lib\site-packages\wandb\sdk\wandb_run.py", line 435, in wrapper_fn
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\University\Semester 6\Machine learning\assignment 3\.venv\Lib\site-packages\wandb\sdk\wandb_run.py", line 425, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\University\Semester 6\Machine learning\assignment 3\.venv\Lib\site-packages\wandb\sdk\wandb_run.py", line 2049, in save
+    return self._save(
+           ^^^^^^^^^^^
+  File "D:\University\Semester 6\Machine learning\assignment 3\.venv\Lib\site-packages\wandb\sdk\wandb_run.py", line 2108, in _save
+    target_path.symlink_to(source_path)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\pathlib.py", line 1198, in symlink_to
+    os.symlink(target, self, target_is_directory)
+OSError: [WinError 1314] A required privilege is not held by the client: 'D:\\University\\Semester 6\\Machine learning\\assignment 3\\bgd_model.pkl' -> 'D:\\University\\Semester 6\\Machine learning\\assignment 3\\wandb\\run-20250413_183339-qxzswkyu\\files\\bgd_model.pkl'
+Traceback (most recent call last):
+  File "d:\University\Semester 6\Machine learning\assignment 3\python train_model.py", line 95, in <module>
+    train_all_models()
+  File "d:\University\Semester 6\Machine learning\assignment 3\python train_model.py", line 92, in train_all_models
+    future.result()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\concurrent\futures\_base.py", line 456, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\University\Semester 6\Machine learning\assignment 3\python train_model.py", line 78, in train_model
+    wandb.save(save_as)
+  File "D:\University\Semester 6\Machine learning\assignment 3\.venv\Lib\site-packages\wandb\sdk\wandb_run.py", line 387, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\University\Semester 6\Machine learning\assignment 3\.venv\Lib\site-packages\wandb\sdk\wandb_run.py", line 435, in wrapper_fn
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\University\Semester 6\Machine learning\assignment 3\.venv\Lib\site-packages\wandb\sdk\wandb_run.py", line 425, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\University\Semester 6\Machine learning\assignment 3\.venv\Lib\site-packages\wandb\sdk\wandb_run.py", line 2049, in save
+    return self._save(
+           ^^^^^^^^^^^
+  File "D:\University\Semester 6\Machine learning\assignment 3\.venv\Lib\site-packages\wandb\sdk\wandb_run.py", line 2108, in _save
+    target_path.symlink_to(source_path)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\pathlib.py", line 1198, in symlink_to
+    os.symlink(target, self, target_is_directory)
+OSError: [WinError 1314] A required privilege is not held by the client: 'D:\\University\\Semester 6\\Machine learning\\assignment 3\\bgd_model.pkl' -> 'D:\\University\\Semester 6\\Machine learning\\assignment 3\\wandb\\run-20250413_183339-qxzswkyu\\files\\bgd_model.pkl'

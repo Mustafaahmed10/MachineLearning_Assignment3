@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>California Housing Price Predictor</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <style>
+        /* General Body Styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            flex-direction: column;
+        }
+
+        h1 {
+            color: #fff;
+            font-size: 2.5em;
+            margin-bottom: 30px;
+        }
+
+        /* Form Styling */
+        form {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            max-width: 500px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        form:hover {
+            transform: translateY(-5px);
+        }
+
+        select, input, button {
+            margin: 10px 0;
+            padding: 12px;
+            font-size: 1.1em;
+            width: 100%;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            transition: border 0.3s ease-in-out;
+        }
+
+        select:focus, input:focus {
+            border: 2px solid #007bff;
+        }
+
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 1.2em;
+            transition: background-color 0.3s ease;
+            padding: 15px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Results Section Styling */
+        .result {
+            margin-top: 20px;
+            font-size: 1.4em;
+            color: #4CAF50;
+            font-weight: bold;
+        }
+
+        /* Chart Section Styling */
+        .chart {
+            margin-top: 40px;
+            width: 90%;
+            max-width: 600px;
+            height: 400px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+        }
+
+        .footer {
+            margin-top: 50px;
+            color: #fff;
+            font-size: 1em;
+        }
+
+        .footer a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .footer a:hover {
+            color: #007bff;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>California Housing Price Predictor</h1>
+
+    <form action="/predict" method="POST">
+        <select name="gd_variant" required>
+            <option value="bgd_model" {% if selected_variant == 'bgd_model' %}selected{% endif %}>Batch Gradient Descent</option>
+            <option value="sgd_model" {% if selected_variant == 'sgd_model' %}selected{% endif %}>Stochastic Gradient Descent</option>
+            <option value="mbgd_model" {% if selected_variant == 'mbgd_model' %}selected{% endif %}>Mini-Batch Gradient Descent</option>
+        </select>
+
+        <input type="number" step="any" name="MedInc" placeholder="Median Income" required>
+        <input type="number" step="any" name="HouseAge" placeholder="House Age" required>
+        <input type="number" step="any" name="AveRooms" placeholder="Average Rooms" required>
+        <input type="number" step="any" name="AveBedrms" placeholder="Average Bedrooms" required>
+        <input type="number" step="any" name="Population" placeholder="Population" required>
+        <input type="number" step="any" name="AveOccup" placeholder="Average Occupancy" required>
+        <input type="number" step="any" name="Latitude" placeholder="Latitude" required>
+        <input type="number" step="any" name="Longitude" placeholder="Longitude" required>
+
+        <button type="submit">Predict</button>
+    </form>
+
+    {% if prediction %}
+        <div class="result">
+            <p>Predicted Median House Value: ${{ prediction }} (in $100,000s)</p>
+        </div>
+    {% endif %}
+
+    {% if chart_html %}
+        <div class="chart">
+            {{ chart_html|safe }}
+        </div>
+    {% endif %}
+
+    <div class="footer">
+        <p>Created with 💙 by 22i-2301 Ahmed Mustafa | <a href="https://github.com/Mustafaahmed10" target="_blank">GitHub</a></p>
+    </div>
+
+</body>
+</html>
